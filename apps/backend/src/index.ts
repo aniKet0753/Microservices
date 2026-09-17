@@ -16,8 +16,8 @@ app.post("/kafka",userdata)
 const PORT=process.env.PORT;
 
 await connectDb()
-await conectProducer();
-await connectConsumer();
+await conectProducer();//startrting producer
+await connectConsumer();//starting consumer
 
 app.listen(PORT,()=>{
   console.log(`server is running on port ${PORT}`);
