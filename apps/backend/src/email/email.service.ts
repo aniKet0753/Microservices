@@ -113,8 +113,7 @@ export const sendUserDetails = async ({
 
 </body>
 
-</html>
-    `,
+</html>`,
   });
 
   console.log("Welcome email sent to:", email);
