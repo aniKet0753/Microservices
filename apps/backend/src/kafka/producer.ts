@@ -25,4 +25,5 @@ export const sendEmail = async (userdata:userdata)=>{
   ]
  })
  console.log("User created event sent to Kafka");
+ //checking CI pipeline
 }
