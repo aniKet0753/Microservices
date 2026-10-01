@@ -114,8 +114,6 @@ export const sendUserDetails = async ({
 </body>
 
 </html>
-
-
     `,
   });
 
