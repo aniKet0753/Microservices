@@ -13,12 +13,13 @@ app.use(express.json());
 
 app.post("/kafka",userdata)
 
-const PORT=process.env.PORT;
+const PORT = Number(process.env.PORT) || 3001;
+console.log(PORT)
 
 await connectDb()
 await conectProducer();//startrting producer
 await connectConsumer();//starting consumer
 
-app.listen(PORT,()=>{
+app.listen(PORT,"0.0.0.0",()=>{
   console.log(`server is running on port ${PORT}`);
 })
