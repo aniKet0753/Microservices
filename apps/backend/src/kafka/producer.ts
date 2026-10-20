@@ -11,6 +11,7 @@ export const conectProducer = async ()=>{
     lastName: string,   
     email: string,
     role : string,
+    password: string,
   }
 export const sendEmail = async (userdata:userdata)=>{
  await producer.send({

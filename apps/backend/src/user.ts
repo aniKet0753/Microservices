@@ -8,13 +8,15 @@ export const userdata = async(req:Request,res:Response)=>{
     email: req.body.email,
     firstName: req.body.firstName,
     lastNmae: req.body.lastName,
-    role: req.body.role
+    role: req.body.role,
+    password: req.body.password
   });
   await sendEmail ({
     email: users.email,
     firstName: users.firstName,
     lastName: users.lastNmae,
     role: users.role,
+    password: users.password
   })
       res.status(201).json({
       message: "User created successfully",
